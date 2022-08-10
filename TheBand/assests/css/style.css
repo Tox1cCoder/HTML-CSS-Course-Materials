@@ -6,6 +6,7 @@
 
 html {
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .clear {
@@ -16,8 +17,45 @@ html {
     color: #fff !important;
 }
 
-#main {
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
 }
 
 #header {
@@ -99,7 +137,6 @@ html {
     background-color: #f44336;
 }
 
-
 #header .search-icon {
     color: #fff;
     font: size 20px;
@@ -132,14 +169,12 @@ html {
     margin-top: 25px;
 }
 
-
-#content {
-
-}
-
 #content .content-section {
     width: 800px;
-    padding: 60px 0;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -223,13 +258,11 @@ html {
 }
 
 .places-list {
-    margin: 32px -8px 48px;
+    margin-top: 32px;
 }
 
 .place-item {
-    float: left;
     width: calc(100% / 3);
-    padding: 0 8px;
 }
 
 .place-img {
@@ -261,22 +294,61 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
+.contact-content {
+    margin-top: 48px;
 }
 
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.map-section img {
+    width: 100%;
 }
 
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .modal {
