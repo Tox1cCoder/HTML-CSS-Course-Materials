@@ -57,6 +57,7 @@ html {
     margin-top: 15px;
     border: none;
     text-align: center;
+    -webkit-appearance: none;
 }
 
 #header {
@@ -182,9 +183,10 @@ html {
     font-size: 24px;
 }
 
-.text-description {
+#slider .text-description {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content .content-section {
@@ -319,6 +321,15 @@ html {
 .contact-info {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"] {
