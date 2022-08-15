@@ -74,11 +74,12 @@ html {
     display: inline-block;
 }
 
-#nav, .subnav {
+#nav,
+.subnav {
     list-style-type: none;
 }
 
-#nav > li {
+#nav>li {
     display: inline-block;
 }
 
@@ -86,7 +87,7 @@ html {
     position: relative;
 }
 
-#nav > li > a {
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
@@ -102,12 +103,11 @@ html {
     display: block;
 }
 
-#nav > li:hover > a,
-#nav .subnav li:hover
-{
+#nav>li:hover>a,
+#nav .subnav li:hover {
     color: #000;
     background-color: #ccc;
-    
+
 }
 
 #nav .subnav {
